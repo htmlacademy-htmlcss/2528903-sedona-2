@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Степан Согомонян](https://up.htmlacademy.ru/htmlcss-individual/2/user/2528903).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
