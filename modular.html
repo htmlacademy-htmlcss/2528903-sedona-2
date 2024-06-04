@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="fonts/style.css">
+    <title>Modular</title>
+  </head>
+  <body>
+
+      <header class="header">
+        <h1 class="header-title">Поиск гостиницы в Седоне</h1>
+        <a class="header-link" href="index.html">
+          <img class="header-back" src="images/modular-exit.svg" alt="закрыть" width="52" height="52">
+        </a>
+      </header>
+
+      <main class="settings">
+
+        <form class="settings-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            <label for="settings-date-in">Дата заезда:</label>
+            <input type="date" name="settings-date-in" id="settings-date-in"> <!-- задать 00.месяц.0000 и placeholder -->
+          </p>
+          <p>
+            <label for="settings-date-out">Дата выезда:</label>
+            <input type="date" name="settings-date-out" id="settings-date-out"> <!-- задать 00.месяц.0000 и placeholder -->
+          </p>
+          <p>
+            <label for="settings-date-adult">Взросые:</label>
+            <input type="number" name="settings-date-adult" id="settings-date-adult">
+          </p>
+          <p>
+            <label for="settings-date-child">Дети:</label>
+            <button class="visually-hidden">информация</button>
+            <input type="number" name="settings-date-adult" id="settings-date-child">
+          </p>
+
+
+
+
+
+
+
+
+
+          <button class="button" type="submit">Найти</button>
+        </form>
+
+
+
+      </main>
+
+  </body>
