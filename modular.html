@@ -17,36 +17,25 @@
       <main class="settings">
 
         <form class="settings-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
+          <div>
             <label for="settings-date-in">Дата заезда:</label>
-            <input type="date" name="settings-date-in" id="settings-date-in"> <!-- задать 00.месяц.0000 и placeholder -->
-          </p>
-          <p>
+            <input type="text" name="settings-date-in" id="settings-date-in" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+          </div>
+          <div>
             <label for="settings-date-out">Дата выезда:</label>
-            <input type="date" name="settings-date-out" id="settings-date-out"> <!-- задать 00.месяц.0000 и placeholder -->
-          </p>
-          <p>
+            <input type="text" name="settings-date-out" id="settings-date-out" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+          </div>
+          <div>
             <label for="settings-date-adult">Взросые:</label>
             <input type="number" name="settings-date-adult" id="settings-date-adult">
-          </p>
-          <p>
+          </div>
+          <div>
             <label for="settings-date-child">Дети:</label>
-            <button class="visually-hidden">информация</button>
+            <button class="visually-hidden">информация</button> <!-- Убрать (наверное) -->
             <input type="number" name="settings-date-adult" id="settings-date-child">
-          </p>
-
-
-
-
-
-
-
-
-
+          </div>
           <button class="button" type="submit">Найти</button>
         </form>
-
-
 
       </main>
 
