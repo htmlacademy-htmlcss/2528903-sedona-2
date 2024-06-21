@@ -29,18 +29,16 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-            <img src="images/hotels-header-home.svg" alt="На главную" width="12" height="12">
-            </a>
+            <a class="breadcrumbs-link" href="index.html"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">
               Гостиницы
             </a>
           </li>
-        </ul>
+        </ol>
       </header>
 
       <section class="hotels-settings">
@@ -80,19 +78,19 @@
             <ul class="hotels-list">
               <li class="hotels-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel" checked>
+                  <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="hotels-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="motel">
+                  <input class="control-input" type="radio" name="hotel-type" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="hotels-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="place">
+                  <input class="control-input" type="radio" name="hotel-type" value="place">
                   Апартаменты
                 </label>
               </li>
@@ -107,21 +105,29 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <a href="#" class="button button-cards">
-          <span class="visually-hidden">
-            Показать карточки
-          </span>
-        </a>
-        <a href="#" class="button button-single">
-          <span class="visually-hidden">
-            Показать поштучно
-          </span>
-        </a>
-        <a href="#" class="button button-list">
-          <span class="visually-hidden">
-            Показать список
-          </span>
-        </a>
+        <ul class="select-list">
+          <li class="select-item">
+            <a href="#" class="button button-cards">
+            <span class="visually-hidden">
+              Показать карточки
+            </span>
+            </a>
+          </li>
+          <li class="select-item">
+            <a href="#" class="button button-single">
+            <span class="visually-hidden">
+              Показать поштучно
+            </span>
+            </a>
+          </li>
+          <li class="select-item">
+            <a href="#" class="button button-list">
+            <span class="visually-hidden">
+              Показать список
+            </span>
+            </a>
+          </li>
+        </ul>
 
         <ul class="product-list">
           <li class="product-card">
@@ -217,7 +223,7 @@
     </main>
 
     <footer class="info">
-      <ol class="info-list">
+      <ul class="info-list">
         <li class="info-item">
           <a href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
@@ -233,15 +239,12 @@
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
-        <li class="info-item">
+      </ul>
           <a class="info-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </li>
-        <li class="info-item">
           <a href="https://htmlacademy.ru/">
             <img src="images/footer-academy.png" alt="логотип htmlacademy" width="115" height="33">
           </a>
-        </li>
-      </ol>
+
     </footer>
 
   </body>
