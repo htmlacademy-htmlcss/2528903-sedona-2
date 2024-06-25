@@ -12,15 +12,15 @@
         <a href="index.html">
           <img src="images/logo.svg" alt="Логотип" width="140" height="70">
         </a>
-        <ul class="navigation-list">
+        <ul class="navigation-list list-reset">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-words" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link navigation-link-words" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-words" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -29,11 +29,11 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
+        <ol class="breadcrumbs list-reset">
+          <li class="breadcrumbs-item breadcrumbs-house">
             <a class="breadcrumbs-link" href="index.html"></a>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-hotels">
             <a class="breadcrumbs-link" href="#">
               Гостиницы
             </a>
@@ -49,7 +49,7 @@
             <legend class="hotels-filter-title">
               Инфраструктура:
             </legend>
-            <ul class="hotels-list">
+            <ul class="hotels-list list-reset">
               <li class="hotels-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pool" checked>
@@ -75,7 +75,7 @@
             <legend class="hotels-filter-title">
               Тип Жилья:
             </legend>
-            <ul class="hotels-list">
+            <ul class="hotels-list list-reset">
               <li class="hotels-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
@@ -96,6 +96,11 @@
               </li>
             </ul>
           </fieldset>
+
+
+            <!-- Код с выбором цен-->
+
+
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
@@ -105,7 +110,7 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <ul class="select-list">
+        <ul class="select-list list-reset">
           <li class="select-item">
             <a href="#" class="button button-cards">
             <span class="visually-hidden">
@@ -214,38 +219,41 @@
       <section class="news">
         <h2 class="news-title">Подпишитесь на рассылку</h2>
         <p class="news-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="news-search" action="#" method="post">
-          <label for="news-date">Ваш e-mail</label>
-          <input class="field" type="email" id="news-date" name="news-date" placeholder="email@example.com">
-          <button class="button news-button" type="submit">Подписаться</button>
-        </form>
+        <div class="news-subscribe">
+          <form class="news-search" action="#" method="post">
+            <label for="news-date">Ваш e-mail</label>
+            <input class="field" type="email" id="news-date" name="news-date" placeholder="email@example.com">
+            <button class="button news-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="info">
-      <ul class="info-list">
-        <li class="info-item">
+      <ul class="info-list list-reset">
+        <li class="info-item info-item-vk">
           <a href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
-        <li class="info-item">
+        <li class="info-item info-item-telegram">
           <a href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="info-item">
+        <li class="info-item info-item-youtube">
           <a href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
           <a class="info-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a href="https://htmlacademy.ru/">
+          <a class="info-academy" href="https://htmlacademy.ru/">
             <img src="images/footer-academy.png" alt="логотип htmlacademy" width="115" height="33">
           </a>
 
     </footer>
 
   </body>
+
 </html>
