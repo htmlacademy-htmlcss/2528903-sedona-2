@@ -26,6 +26,20 @@ body{
 }
 
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .list-reset{
   list-style-type: none;
   margin: 0;
@@ -44,21 +58,30 @@ body{
   background-color: #ffffff;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
   text-align: center;
   text-decoration: none;
 }
 
 
-.navigation-link-icon{
+.navigation-link-search{
   color: #000000;
   background-color: #ffffff;
-  background-image: url("../images/main-header-search.svg"),
-                    url("../images/main-header-heart.svg");
+  background-image: url("../images/main-header-search.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
 }
+
+
+.navigation-link-heart{
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/main-header-heart.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
 
 
 .hero{
@@ -134,7 +157,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #333;
+  color: #333333;
 }
 
 
@@ -255,36 +278,6 @@ body{
 }
 
 
-.info-item-vk{
-  background-image: url("../images/footer-vk.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 25px;
-  height: 15px;
-  fill: #83b3d3;
-}
-
-
-.info-item-telegram{
-  background-image: url("../images/footer-telegram.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 18px;
-  height: 16px;
-  fill: #83b3d3;
-}
-
-
-.info-item-youtube{
-  background-image: url("../images/footer-youtube.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 23px;
-  height: 18px;
-  fill: #83b3d3;
-}
-
-
 .info-contacts{
   color: #000000;
   font-size: 40px;
@@ -324,27 +317,18 @@ body{
 }
 
 
-.breadcrumbs-house{
-  background-image: url("../images/breadcrumbs-house.svg");
-  background-repeat: no-repeat;
-  width: 13px;
-  height: 15px;
-}
-
-
 .breadcrumbs-hotels{
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
 }
-/* Не убирается цвет ссылки и подчеркивание */
+
 
 .hotels-filter-title{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
   color: #ffffff;
 }
 
@@ -377,4 +361,177 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+
+.button-cards{
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+
+.button-single{
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+
+.button-list{
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+
+.product-card{
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+  width: 340px;
+  height: 438px;
+}
+
+
+.product-card-image{
+  width: 300px;
+  height: 212px;
+}
+
+
+.product-card-underline{
+  text-decoration: none;
+}
+
+
+.product-card-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+
+.product-card-type{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+
+.product-card-price{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: right;
+  color: #333333
+}
+
+
+.product-card-info-button{
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  text-decoration: none;
+  background:#756157;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.product-card-like-button{
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  background: #82b3d3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.product-card-like-button-green{
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  background: #7db54f;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+/* Селектор со звездочками */
+
+
+.product-card-rating{
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  background: #f2f2f2;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+}
+
+
+.pagination-link{
+  text-decoration: none;
+}
+
+
+.pagination-grey{
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+
+.pagination-blue{
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  background: #82b3d3;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
 }
