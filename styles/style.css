@@ -964,9 +964,15 @@ body{
   border-radius: 50%;
 }
 
-.control:hover{
-  opacity: 0.6;
+.control-input:hover ~ .control-click{
   cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.6);
+}
+
+
+.control-input:hover ~ .control-word{
+  cursor: pointer;
+  color: rgba(225, 225, 225, 0.6);
 }
 
 .control:focus{
@@ -980,8 +986,28 @@ body{
   border: none;
 }
 
-.control:active{
-  opacity: 0.3;
+.control-input:active ~ .control-click{
+  cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.3);
+}
+
+
+.control-input:active ~ .control-word{
+  cursor: pointer;
+  color: rgba(225, 225, 225, 0.3);
+}
+
+.control-input:disabled ~ .control-click{
+  pointer-events:none;
+  background-color: rgb(229, 229, 229, 0.5);
+  opacity: 1;
+}
+
+
+.control-input:disabled ~ .control-word{
+  pointer-events:none;
+  color: rgb(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 /* БЛОК С RANGE */
