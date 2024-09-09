@@ -287,8 +287,8 @@ body{
 }
 
 .hero{
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("../images/index-main-background-bottom.svg"),
                     url("../images/main-background.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -593,8 +593,8 @@ body{
 }
 
 .news-background{
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("../images/main-news-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -809,8 +809,8 @@ body{
 
 .hotels-settings{
   background-image: url("../images/hotels-main-background.jpg");
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -1218,7 +1218,7 @@ border-radius: 4px 0 0 4px;
   margin-bottom: 53px;
 }
 
-.select-containter{
+.select-container{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1561,7 +1561,7 @@ border-radius: 4px 0 0 4px;
 
 /* Селектор со звездочками */
 
-.product-raiting{
+.product-rating{
   justify-self: start;
   align-self: center;
 }
@@ -1913,6 +1913,10 @@ border-radius: 4px 0 0 4px;
   background: #f2f2f2;
   border: none;
   padding: 0;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
 }
 
 .settings-age-border::-webkit-inner-spin-button{

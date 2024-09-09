@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" href="favicon.ico">
     <title>Sedona</title>
   </head>
@@ -123,7 +124,7 @@
         <p class="news-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="news-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="news-date">Ваш e-mail</label>
-          <input class="field field-index" type="email" id="news-date" name="news-date" placeholder="Ваш e-mail">
+          <input class="field field-index" type="email" id="news-date" name="news-date" placeholder="Ваш e-mail" required>
           <button class="button news-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -184,12 +185,12 @@
         <form class="settings-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="settings-holder">
             <label class="settings-attribute" for="settings-date-in">Дата заезда:</label>
-            <input class="settings-date-border" type="text" name="settings-date-in" id="settings-date-in" placeholder="Укажите дату" value="27 апреля 2020">
+            <input class="settings-date-border" type="text" name="settings-date-in" id="settings-date-in" placeholder="Укажите дату" value="27 апреля 2020" required>
             <span class="settings-error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="settings-holder">
             <label class="settings-attribute" for="settings-date-out">Дата выезда:</label>
-            <input class="settings-date-border" type="text" name="settings-date-out" id="settings-date-out" placeholder="Укажите дату" value="1 сентября 2023">
+            <input class="settings-date-border" type="text" name="settings-date-out" id="settings-date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
             <span class="settings-accept">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="settings-age">
